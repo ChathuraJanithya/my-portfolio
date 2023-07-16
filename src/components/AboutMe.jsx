@@ -1,5 +1,4 @@
 import React from "react";
-import cj from "../assets/img/cj.jpeg";
 
 export const AboutMe = () => {
   return (

@@ -38,7 +38,7 @@ export const Contact = () => {
                   </div>
                   <div className="item">
                     <img src={whatsapp} alt={whatsapp} />
-                    <a href="#">+94 71 2150 138</a>
+                    <a href="#a">+94 71 2150 138</a>
                   </div>
                   <div className="item">
                     <img src={github} alt={github} />
