@@ -1,3 +1,7 @@
+import React from "react";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+
 import meter1 from "../assets/img/meter1.svg";
 import meter2 from "../assets/img/meter2.svg";
 import meter3 from "../assets/img/meter3.svg";
@@ -11,8 +15,6 @@ import Node from "../assets/img/Node.svg";
 import mongo from "../assets/img/mongo.svg";
 import sql from "../assets/img/sql.svg";
 import kotlin from "../assets/img/kotlin.svg";
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
 import colorSharp from "../assets/img/color-sharp.png";
 
 export const Skills = () => {
@@ -47,6 +49,8 @@ export const Skills = () => {
                 <Carousel
                   responsive={responsive}
                   infinite={true}
+                  autoPlay={true}
+                  autoPlaySpeed={3500}
                   className="owl-carousel owl-theme skill-slider"
                 >
                   <div className="item">
@@ -69,6 +73,8 @@ export const Skills = () => {
                 <Carousel
                   responsive={responsive}
                   infinite={true}
+                  autoPlay={true}
+                  autoPlaySpeed={3000}
                   className="owl-carousel owl-theme skill-slider"
                 >
                   <div className="item">
@@ -102,6 +108,8 @@ export const Skills = () => {
               <Carousel
                 responsive={responsive}
                 infinite={true}
+                autoPlay={true}
+                autoPlaySpeed={3000}
                 className="owl-carousel owl-theme skill-slider"
               >
                 <div className="item">

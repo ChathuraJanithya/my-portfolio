@@ -33,7 +33,7 @@ export const NavBar = () => {
     <Router>
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
-          <Navbar.Brand href="/">
+          <Navbar.Brand href="/" className="my-logo">
             {/* Brand text */}
             <h1 className="logo-chathura text-white w-7">CJ</h1>
           </Navbar.Brand>

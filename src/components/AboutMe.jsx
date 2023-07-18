@@ -1,12 +1,36 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 export const AboutMe = () => {
+  useEffect(() => {
+    const section = document.querySelector(".head-me");
+    const observerOptions = {
+      rootMargin: "0px",
+      threshold: 0.5, // Adjust the threshold as needed
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("fade-in");
+        } else {
+          entry.target.classList.remove("fade-in");
+        }
+      });
+    }, observerOptions);
+
+    observer.observe(section);
+
+    return () => {
+      observer.unobserve(section);
+    };
+  }, []);
   return (
     <section className="about-me" id="about">
-      <h1 className="head-me">
+      <h1 className="head-me fade-in">
         Meet the person <br />
         behind the screen.
       </h1>
+      <br />
       <div className="container">
         <div className="col1">
           <p>
